@@ -3,23 +3,7 @@ This is a workflow repository powered by [Actionsflow](https://github.com/action
 
 # 🏁 Getting Started <a name = "getting_started"></a>
 
-Build an Actionsflow workflow is a four-step process:
-
-1. **Create a public Github repository by this [link](https://github.com/actionsflow/actionsflow-workflow-default/generate).**
-
-   A typical Actionsflow repository structure looks like this:
-
-   ```sh
-   ├── .github
-   │   └── workflows
-   │       └── actionsflow.yml
-   ├── .gitignore
-   ├── README.md
-   └── workflows
-   │   └── rss.yml
-   │   └── webhook.yml
-   └── package.json
-   ```
+Build an Actionsflow workflow:
 
 1. **Uncomment [`.github/workflows/actionsflow.yml`](/.github/workflows/actionsflow.yml) schedule event**
 
@@ -66,45 +50,6 @@ Build an Actionsflow workflow is a four-step process:
 Then, Actionsflow will run your workflows as you defined, you can view logs at your repository actions tab at [Github](https://github.com)
 
 For more information, see [Full documentation](https://actionsflow.github.io/docs/)
-
-## Run Locally
-
-You can run self-hosted Actionsflow manually or [by docker](https://actionsflow.github.io/docs/self-hosted/#docker): 
-
-## Prerequisites
-
-1. Install [docker](https://docs.docker.com/get-docker/)
-1. Install [act](https://github.com/nektos/act)
-1. Install dependencies by running `npm install`
-
-### Start
-
-Start Actionsflow locally:
-
-```bash
-npm run start
-# Then, the cron job and webhook server will start running
-# The webhook endpoint will be ran at http://localhost:3000/webhook/
-```
-
-### Build
-
-```bash
-npm run build
-# Then, the standard workflow files will be built at ./dist/workflows
-```
-
-### Clean
-
-Actionsflow build will use cache for deduplicating the data, if you want to test your workflow with the same data, you may need to clean the cache by the following command:
-
-```bash
-# Clean the cache and dist folder.
-npm run clean
-```
-
-Learn more abount self-hosted Actionsflow [here](https://actionsflow.github.io/docs/self-hosted)
-
 
 # 🎓 Learn More <a name="reference"></a>
 
