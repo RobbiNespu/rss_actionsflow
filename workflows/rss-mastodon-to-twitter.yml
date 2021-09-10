@@ -1,6 +1,8 @@
 on:
   rss:
     url: https://mastodon.technology/@ricard_dev.rss
+    config:
+      limit: 5
 jobs:
   twitter:
     name: Post a tweet

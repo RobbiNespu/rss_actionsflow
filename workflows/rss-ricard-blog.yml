@@ -1,6 +1,8 @@
 on:
   rss:
     url: https://ricard.blog/feed/
+    config:
+      limit: 5
 jobs:
   request:
     name: Make a HTTP Request

@@ -1,6 +1,8 @@
 on:
   rss:
     url: https://ricard.dev/links?feed=links
+    config:
+      limit: 5
 jobs:
   request:
     name: Make a HTTP Request
