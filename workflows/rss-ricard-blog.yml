@@ -1,0 +1,19 @@
+on:
+  rss:
+    url: https://ricard.blog/feed/
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: https://mastodon.technology/api/v1/statuses
+          method: POST
+          bearer-token: ${{ secrets.ACCESS_TOKEN }}
+          data: |
+            {
+              "status":"📝 New post: <<< ${{ on.rss.outputs.title }} - ${{ on.rss.title }} ➡️ ${{ on.rss.outputs.link }}>>>", 
+              "media_ids": []
+            }
