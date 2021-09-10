@@ -15,4 +15,5 @@ jobs:
           data: |
             {
               "status":"<<<${{ on.rss.outputs.content }}>>>", 
+              "media_ids": []
             }
