@@ -16,6 +16,3 @@ jobs:
             {
               "status":"<<<${{ on.rss.outputs.content }}>>>", 
             }
-      - run: echo ${{ steps.api.outputs.status }}
-      - run: echo ${{ steps.api.outputs.data }}
-      - run: echo ${{ steps.api.outputs.headers }}
