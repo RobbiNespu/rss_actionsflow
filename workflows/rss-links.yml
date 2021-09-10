@@ -12,6 +12,7 @@ jobs:
           url: https://mastodon.technology/api/v1/statuses?access_token=${{ secrets.ACCESS_TOKEN }}
           method: POST
           bearer-token: ${{ secrets.ACCESS_TOKEN }}
+          is_debug: true
           data: |
             {
               "status":"<<<${{ on.rss.outputs.content }}>>>", 
