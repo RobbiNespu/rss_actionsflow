@@ -1,0 +1,17 @@
+on:
+  rss:
+    url: https://ricard.dev/links?feed=links
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: https://mastodon.technology/api/v1/statuses?access_token=${{ secrets.ACCESS_TOKEN }}
+          method: POST
+          body: |
+            {
+              "status":"${{ on.rss.outputs.content }}", 
+            }
