@@ -9,11 +9,11 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
-          url: https://mastodon.technology/api/v1/statuses?access_token=${{ secrets.ACCESS_TOKEN }}
+          url: https://mastodon.technology/api/v1/statuses
           method: POST
           bearer-token: ${{ secrets.ACCESS_TOKEN }}
           data: |
             {
-              "status":"<<<${{ on.rss.outputs.content }}>>>", 
+              "status":"Hello world", 
               "media_ids": []
             }
