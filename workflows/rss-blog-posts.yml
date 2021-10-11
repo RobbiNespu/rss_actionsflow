@@ -13,7 +13,7 @@ jobs:
         with:
           url: https://mstdn.social/api/v1/statuses
           method: POST
-          bearer-token: ${{ secrets.ACCESS_TOKEN }}
+          bearer-token: ${{ secrets.MSTDN_ACCESS_TOKEN }}
           data: |
             {
               "status":"📝 New post: <<< ${{ on.rss.outputs.title }} - ${{ on.rss.title }} ➡️ ${{ on.rss.outputs.link }}>>>", 
