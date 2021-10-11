@@ -1,0 +1,21 @@
+on:
+  rss:
+    url: https://robbinespu.gitlab.io/indieweb/index.xml
+    config:
+      limit: 5
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: https://mstdn.social/api/v1/statuses
+          method: POST
+          bearer-token: ${{ secrets.MSTDN_ACCESS_TOKEN }}
+          data: |
+            {
+              "status":"👨‍💻 New #indieweb post: <<< ${{ on.rss.outputs.title }} - ${{ on.rss.title }} ➡️ ${{ on.rss.outputs.link }}>>>", 
+              "media_ids": []
+            }
