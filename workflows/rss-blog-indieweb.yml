@@ -16,6 +16,6 @@ jobs:
           bearer-token: ${{ secrets.MSTDN_ACCESS_TOKEN }}
           data: |
             {
-              "status":"👨‍💻 New #indieweb post: <<< ${{ on.rss.outputs.title }} - ${{ on.rss.title }} ➡️ ${{ on.rss.outputs.link }}>>>", 
+              "status":"👨‍💻 New #indieweb post: <<< ➡️ ${{ on.rss.outputs.link }}>>>", 
               "media_ids": []
             }
