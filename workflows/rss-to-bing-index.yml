@@ -2,7 +2,7 @@ on:
   rss:
     url: https://robbinespu.gitlab.io/index.xml
     config:
-      limit: 100
+      limit: 1
 jobs:
   request:
     name: Make a HTTP Request
