@@ -1,6 +1,6 @@
 #on:
 #  rss:
-#    url: https://quicoto.github.io/reviews/rss.xml
+#    url: https://robbinespu.gitlab.io/indieweb/index.xml
 #    config:
 #      limit: 5
 #jobs:
@@ -11,11 +11,11 @@
 #      - name: Make a HTTP Request
 #        uses: actionsflow/axios@v1
 #        with:
-#          url: https://mastodon.technology/api/v1/statuses
+#          url: https://mstdn.social/api/v1/statuses
 #          method: POST
-#          bearer-token: ${{ secrets.ACCESS_TOKEN }}
+#          bearer-token: ${{ secrets.MSTDN_ACCESS_TOKEN }}
 #          data: |
 #            {
-#              "status":"<<<${{ on.rss.outputs.content }}>>>", 
+#              "status":"👨‍💻 New indieweb post: <<< ➡️ ${{ on.rss.outputs.link }}>>>", 
 #              "media_ids": []
 #            }
