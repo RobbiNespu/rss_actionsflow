@@ -9,7 +9,7 @@
 #    runs-on: ubuntu-latest
 #    steps:
 #      - name: Post a tweet
-#        uses: ethomson/send-tweet-action@v1
+#        uses: quicoto/send-tweet-action@v3
 #        with:
 #          status: ${{ on.rss.outputs.contentSnippet }}
 #          consumer-key: ${{ secrets.TWITTER_CONSUMER_KEY }}
