@@ -1,6 +1,6 @@
 on:
   rss:
-    url: https://mastodon.technology/@ricard_dev.rss
+    url: https://ricard.social/@ricard.rss
     config:
       limit: 5
 jobs:

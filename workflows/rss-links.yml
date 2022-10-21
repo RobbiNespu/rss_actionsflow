@@ -11,7 +11,7 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
-          url: https://mastodon.technology/api/v1/statuses
+          url: https://ricard.social/api/v1/statuses
           method: POST
           bearer-token: ${{ secrets.ACCESS_TOKEN }}
           data: |
