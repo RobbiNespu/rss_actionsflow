@@ -2,6 +2,7 @@ on:
   rss:
     url: https://ricard.blog/feed/
     config:
+      debug: true
       limit: 5
 jobs:
   request:

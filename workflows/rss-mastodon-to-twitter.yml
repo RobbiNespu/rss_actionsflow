@@ -2,6 +2,7 @@ on:
   rss:
     url: https://ricard.social/@ricard.rss
     config:
+      debug: true
       limit: 5
 jobs:
   twitter:
