@@ -17,6 +17,6 @@ jobs:
           bearer-token: ${{ secrets.ACCESS_TOKEN }}
           data: |
             {
-              "status":"<<<${{ on.rss.outputs['content:encoded'] }}>>>", 
+              "status":"<<<${{ on.rss.outputs.description }}>>>", 
               "media_ids": []
             }
