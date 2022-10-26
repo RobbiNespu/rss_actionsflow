@@ -1,0 +1,22 @@
+on:
+  rss:
+    url: https://quicoto.github.io/reviews/rss.xml
+    config:
+      debug: true
+      limit: 5
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: https://ricard.social/api/v1/statuses
+          method: POST
+          bearer-token: ${{ secrets.ACCESS_TOKEN }}
+          data: |
+            {
+              "status":"<<<${{ on.rss.outputs['content:encoded'] }}>>>", 
+              "media_ids": []
+            }
