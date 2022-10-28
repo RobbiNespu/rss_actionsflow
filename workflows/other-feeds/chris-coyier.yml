@@ -1,0 +1,23 @@
+on:
+  rss:
+    url: http://chriscoyier.net/feed/
+    config:
+      debug: true
+      limit: 5
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: https://ricard.social/api/v1/statuses
+          method: POST
+          bearer-token: ${{ secrets.BOT_FEEDS_ACCESS_TOKEN }}
+          data: |
+            {
+              "status":"Chris Coyer Blog \n\n <<< ${{ on.rss.outputs.title }} \n\n ${{ on.rss.outputs.link }}>>>",
+              "visibility": "private",
+              "media_ids": []
+            }
