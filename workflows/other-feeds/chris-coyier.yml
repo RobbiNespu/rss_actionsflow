@@ -17,7 +17,7 @@ jobs:
           bearer-token: ${{ secrets.BOT_FEEDS_ACCESS_TOKEN }}
           data: |
             {
-              "status":"Chris Coyer Blog \n\n <<< ${{ on.rss.outputs.title }} \n\n ${{ on.rss.outputs.link }}>>>",
+              "status":"Chris Coyer Blog \n\n<<<${{ on.rss.outputs.title }}>>>\n\n<<<${{ on.rss.outputs.link }}>>>",
               "visibility": "private",
               "media_ids": []
             }
