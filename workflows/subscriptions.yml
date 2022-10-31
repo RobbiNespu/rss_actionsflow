@@ -1,20 +1,19 @@
 on:
   rss:
     url:
-      - http://blog.leica-camera.com/feed/
-      - http://blog.linode.com/feed/
-      - http://chriscoyier.net/feed/
-      - http://chrome.blogspot.com/atom.xml
-      - http://feeds.feedburner.com/ElPachinko
-      - http://feeds.feedburner.com/feross
-      - http://feeds.feedburner.com/leaverou
-      - http://feeds.feedburner.com/LeicaCamera
-      - http://feeds.feedburner.com/wordpresspodcast
-      - http://feeds.mattcutts.com/mattcutts/uJBW
-      - http://feeds2.feedburner.com/ChicharreroPorHongKong
-      - http://feeds2.feedburner.com/css3
-      - http://paulstamatiou.com/posts.xml
-      - http://www.quicoto.com/feed/
+      - https://blog.linode.com/feed/
+      - https://chriscoyier.net/feed/
+      - https://chrome.blogspot.com/atom.xml
+      - https://feeds.feedburner.com/ElPachinko
+      - https://feeds.feedburner.com/feross
+      - https://feeds.feedburner.com/leaverou
+      - https//feeds.feedburner.com/LeicaCamera
+      - https://feeds.feedburner.com/wordpresspodcast
+      - https://feeds.mattcutts.com/mattcutts/uJBW
+      - https://feeds2.feedburner.com/ChicharreroPorHongKong
+      - https://feeds2.feedburner.com/css3
+      - https://paulstamatiou.com/posts.xml
+      - https://www.quicoto.com/feed/
       - https://albertsaseblog.wordpress.com/feed/
       - https://alistapart.com/main/feed/
       - https://anchor.fm/s/67fb8abc/podcast/rss
