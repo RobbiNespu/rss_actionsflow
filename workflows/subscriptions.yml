@@ -1,28 +1,26 @@
 on:
   rss:
     url:
-      - https://blog.linode.com/feed/
-      - https://chriscoyier.net/feed/
-      - https://chrome.blogspot.com/atom.xml
-      - https://feeds.feedburner.com/ElPachinko
-      - https://feeds.feedburner.com/feross
-      - https://feeds.feedburner.com/leaverou
-      - https://feeds.feedburner.com/LeicaCamera
-      - https://feeds.feedburner.com/wordpresspodcast
-      - https://feeds.mattcutts.com/mattcutts/uJBW
-      - https://feeds2.feedburner.com/ChicharreroPorHongKong
-      - https://feeds2.feedburner.com/css3
-      - https://paulstamatiou.com/posts.xml
-      - https://www.quicoto.com/feed/
+      - http://feeds2.feedburner.com/blogspot/Egta
       - https://albertsaseblog.wordpress.com/feed/
       - https://alistapart.com/main/feed/
       - https://anchor.fm/s/67fb8abc/podcast/rss
+      - https://blog.linode.com/feed/
       - https://blog.maximeheckel.com/rss.xml
+      - https://chriscoyier.net/feed/
+      - https://elpachinko.com/feed
       - https://feed.ctrl.blog/latest.atom
       - https://feedpress.me/stephaniewalter-blog-en
+      - https://feeds.feedburner.com/LeicaCamera
+      - https://feeds.feedburner.com/feross
+      - https://feeds.feedburner.com/leaverou
+      - https://feeds.feedburner.com/wordpresspodcast
+      - https://feeds2.feedburner.com/ChicharreroPorHongKong
+      - https://feeds2.feedburner.com/css3
       - https://firt.dev/feed/feed.xml
       - https://letsencrypt.org/feed.xml
       - https://ma.tt/feed/
+      - https://paulstamatiou.com/posts.xml
       - https://ricard.blog/feed/
       - https://ricard.dev/feed/
       - https://robert.winter.ink/feed/
@@ -30,6 +28,7 @@ on:
       - https://rss.blog.naver.com/hdgdhq.xml
       - https://www.baldurbjarnason.com/index.xml
       - https://www.industrialempathy.com/feed/feed.xml
+      - https://www.quicoto.com/feed/
       - https://yazeedb.com/rss.xml
       - https://zendev.com/feed.xml
     config:
