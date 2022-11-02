@@ -18,6 +18,7 @@ on:
       - https://feeds2.feedburner.com/ChicharreroPorHongKong
       - https://feeds2.feedburner.com/css3
       - https://firt.dev/feed/feed.xml
+      - https://jan.boddez.net/feed/
       - https://letsencrypt.org/feed.xml
       - https://ma.tt/feed/
       - https://paulstamatiou.com/posts.xml
