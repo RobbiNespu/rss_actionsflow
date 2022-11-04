@@ -35,7 +35,7 @@ on:
       - https://zendev.com/feed.xml
     config:
       debug: true
-      limit: 100
+      limit: 25
 jobs:
   request:
     name: Make a HTTP Request
