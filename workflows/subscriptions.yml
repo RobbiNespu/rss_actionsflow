@@ -1,6 +1,7 @@
 on:
   rss:
     url:
+      - https://2ality.com/feeds/posts.atom
       - http://feeds2.feedburner.com/blogspot/Egta
       - https://albertsaseblog.wordpress.com/feed/
       - https://alistapart.com/main/feed/
