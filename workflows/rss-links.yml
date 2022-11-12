@@ -9,14 +9,10 @@ jobs:
     name: Make a HTTP Request
     runs-on: ubuntu-latest
     steps:
-      - name: Make a HTTP Request
-        uses: actionsflow/axios@v1
-        with:
-          url: https://ricard.social/api/v1/statuses
-          method: POST
-          bearer-token: ${{ secrets.ACCESS_TOKEN }}
-          data: |
-            {
-              "status":"<<<${{ on.rss.outputs.description }}>>>", 
-              "media_ids": []
-            }
+    - name: Make call to Mastodon
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'https://ricard.social/api/v1/statuses'
+        method: 'POST'
+        bearerToken: ${{ secrets.ACCESS_TOKEN }}    
+        data: '{"status":"<<<${{ on.rss.outputs.description }}>>>"}'
