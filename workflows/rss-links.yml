@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Make call to Mastodon
       uses: actions/setup-node@v3
-        with:
-          node-version: 12
+      with:
+        node-version: 12
       uses: fjogeleit/http-request-action@v1
       with:
         url: 'https://ricard.social/api/v1/statuses'
