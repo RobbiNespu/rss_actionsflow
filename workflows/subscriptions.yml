@@ -31,6 +31,7 @@ on:
       - https://www.quicoto.com/feed/
       - https://yazeedb.com/rss.xml
       - https://zendev.com/feed.xml
+      - https://feeds.arstechnica.com/arstechnica/features
     config:
       debug: true
       limit: 25
