@@ -4,7 +4,7 @@ on:
       - https://journal.robbi.my/index.xml
     config:
       debug: true
-      limit: 5
+      limit: 1
 jobs:
   request:
     name: Make a HTTP Request
