@@ -1,7 +1,10 @@
 on:
   rss:
-    url: https://robbinespu.gitlab.io/index.xml
+    url:
+      - https://robbinespu.gitlab.io/index.xml
+      - https://journal.robbi.my/index.xml
     config:
+      debug: true
       limit: 5
 jobs:
   request:
