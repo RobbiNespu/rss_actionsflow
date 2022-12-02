@@ -1,7 +1,7 @@
 name: Actionsflow
 on:
   schedule:
-    - cron: "0 */4 * * *" # every hour
+    - cron: "0 */4 * * *" # every 4 hour
   push:
     branches:
       - main
