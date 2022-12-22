@@ -29,7 +29,6 @@ on:
       - https://www.baldurbjarnason.com/index.xml
       - https://www.industrialempathy.com/feed/feed.xml
       - https://www.quicoto.com/feed/
-      - https://yazeedb.com/rss.xml
       - https://zendev.com/feed.xml
       - https://feeds.arstechnica.com/arstechnica/features
     config:
