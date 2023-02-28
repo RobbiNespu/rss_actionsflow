@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Make call to Mastodon
+      uses: actions/setup-node@v3
+      with:
+        node-version: 12
       uses: fjogeleit/http-request-action@v1
       with:
         url: 'https://ricard.social/api/v1/statuses'
         method: 'POST'
-        bearerToken: ${{ secrets.ACCESS_TOKEN }}    
+        bearerToken: ${{ secrets.ACCESS_TOKEN }}
         data: '{"status":"<<<${{ on.rss.outputs.description }}>>>"}'
